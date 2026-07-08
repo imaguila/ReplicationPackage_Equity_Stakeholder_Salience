@@ -4,9 +4,12 @@ This repository contains the replication datasets for the paper **"Operationaliz
 
 ## Overview
 
+## Overview
+
 The dataset provides the experimental data used to evaluate the proposed operationalization method for identifying stakeholder salience based on three core attributes: **Urgency (`urg`)**, **Legitimacy (`leg`)**, and **Power (`pow`)**. 
 
-To evaluate effectiveness in maintaining equality and diversity, the arrangement model is systematically evaluated by mapping stakeholder attributes into **two and three intervals** per dimension, producing distinct stakeholder **subgroups**.
+The source metrics are derived from the original RALIC project dataset, which is publicly available at [Sooling Lim's Dataset Repository](https://soolinglim.com/Datasets.html). To evaluate effectiveness in maintaining equality and diversity, the arrangement model is systematically evaluated by mapping these stakeholder attributes into **two and three intervals** per dimension, producing distinct stakeholder **subgroups**.
+
 
 ## Repository Structure
 
