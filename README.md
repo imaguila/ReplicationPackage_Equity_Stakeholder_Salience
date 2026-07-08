@@ -4,33 +4,33 @@ This repository contains the replication datasets for the paper **"Operationaliz
 
 ## Overview
 
-The dataset provides the experimental data used to evaluate the proposed operationalization method for identifying stakeholder salience based on three core attributes: **Urgency (`urg`)**, **Legitimacy (`leg`)**, and **Power (`pow`)**[cite: 1]. 
+The dataset provides the experimental data used to evaluate the proposed operationalization method for identifying stakeholder salience based on three core attributes: **Urgency (`urg`)**, **Legitimacy (`leg`)**, and **Power (`pow`)**. 
 
-To evaluate effectiveness in maintaining equality and diversity, the arrangement model is systematically evaluated by mapping stakeholder attributes into **two and three intervals** per dimension, producing distinct stakeholder **subgroups**[cite: 1].
+To evaluate effectiveness in maintaining equality and diversity, the arrangement model is systematically evaluated by mapping stakeholder attributes into **two and three intervals** per dimension, producing distinct stakeholder **subgroups**.
 
 ## Repository Structure
 
-The repository includes the four primary `.csv` files corresponding exactly to the partition methods and dimension intervals evaluated in the case study[cite: 1]:
+The repository includes the four primary `.csv` files corresponding exactly to the partition methods and dimension intervals evaluated in the case study:
 
 1. `REFSQ_stks_grouped_mid_points.csv`  
-   * **Subgroups:** 2 intervals (low, high) per dimension[cite: 1].
-   * **Partition Criteria:** Divides the range of each dimension into two halves of equal amplitude (Same range width)[cite: 1].
+   * **Subgroups:** 2 intervals (low, high) per dimension.
+   * **Partition Criteria:** Divides the range of each dimension into two halves of equal amplitude (Same range width).
 
 2. `REFSQ_stks_grouped_q2s.csv`  
-   * **Subgroups:** 2 intervals (low, high) per dimension[cite: 1].
-   * **Partition Criteria:** Divides the range of each dimension into two subintervals using the median (Same stakeholders number), balancing the distribution[cite: 1].
+   * **Subgroups:** 2 intervals (low, high) per dimension.
+   * **Partition Criteria:** Divides the range of each dimension into two subintervals using the median (Same stakeholders number), balancing the distribution.
 
-3. `REFSQ_stks_grouped_three_subintervals (1).csv`  
-   * **Subgroups:** 3 intervals (low, moderate, high) per dimension[cite: 1].
+3. `REFSQ_stks_grouped_three_subintervals.csv`  
+   * **Subgroups:** 3 intervals (low, moderate, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into three subintervals of equal amplitude (Same range width)[cite: 1].
 
 4. `REFSQ_stks_grouped_terciles.csv`  
    * **Subgroups:** 3 intervals (low, moderate, high) per dimension[cite: 1].
-   * **Partition Criteria:** Divides the range of each dimension into three subintervals using terciles (Same stakeholders number), optimizing balance and diversity[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into three subintervals using terciles (Same stakeholders number), optimizing balance and diversity.
 
 ## Data Format & Schema
 
-Each CSV file uses a semicolon (`;`) as a separator and follows this structure[cite: 1]:
+Each CSV file uses a semicolon (`;`) as a separator and follows this structure:
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
