@@ -38,3 +38,18 @@ Each CSV file uses a semicolon (`;`) as a separator and follows this structure:
 "class";"key";"id";"urg";"leg";"pow"
 "low.low.low";1;1;8;31;24.75
 "low.low.high";52;52;19;110;49.325
+
+### Citation
+If you use this replication package or find the methodology useful in your research, please cite our paper:
+
+```
+@article{delaguila2026operationalization,
+  title={Operationalization of equity through quantitative analysis of stakeholder salience},
+  author={del {\'A}guila, Isabel M. and del Sagrado, Jos{\'e}},
+  journal={Software},
+  year={2026}
+}
+```
+
+License
+This dataset is made available for academic and replication purposes.
