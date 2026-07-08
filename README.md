@@ -4,40 +4,48 @@ This repository contains the replication datasets for the paper **"Operationaliz
 
 ## Overview
 
+The dataset provides the experimental data used to evaluate the proposed operationalization method for identifying stakeholder salience based on three core attributes: **Urgency (`urg`)**, **Legitimacy (`leg`)**, and **Power (`pow`)**[cite: 1]. 
 
-The dataset provides the experimental data used to evaluate the proposed operationalization method for identifying stakeholder salience based on three core attributes: **Urgency (`urg`)**, **Legitimacy (`leg`)**, and **Power (`pow`)**. 
-
-To analyze the performance and fairness metrics, data partitions were generated using two different partition styles across two and three cuts (thresholds) per dimension.
+To evaluate effectiveness in maintaining equality and diversity, the arrangement model is systematically evaluated by mapping stakeholder attributes into **two and three intervals** per dimension, producing distinct stakeholder **subgroups**[cite: 1].
 
 ## Repository Structure
 
-The repository includes four primary `.csv` files representing the combinations of partition types and cut numbers evaluated in the study:
+The repository includes the four primary `.csv` files corresponding exactly to the partition methods and dimension intervals evaluated in the case study[cite: 1]:
 
-1. `data_partition_2cuts_methodA.csv` - Dataset using 2 cuts (low/high) per dimension.
-2. `data_partition_3cuts_methodA.csv` - Dataset using 3 cuts (low/mid/high) per dimension.
-3. `data_partition_2cuts_methodB.csv` - Alternative partition strategy with 2 cuts.
-4. `data_partition_3cuts_methodB.csv` - Alternative partition strategy with 3 cuts.
+1. `REFSQ_stks_grouped_mid_points.csv`  
+   * **Subgroups:** 2 intervals (low, high) per dimension[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into two halves of equal amplitude (Same range width)[cite: 1].
 
-*(Note: Please rename the placeholders above to match your exact file naming convention, e.g., using `mid_points` or specific algorithm names).*
+2. `REFSQ_stks_grouped_q2s.csv`  
+   * **Subgroups:** 2 intervals (low, high) per dimension[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into two subintervals using the median (Same stakeholders number), balancing the distribution[cite: 1].
+
+3. `REFSQ_stks_grouped_three_subintervals (1).csv`  
+   * **Subgroups:** 3 intervals (low, moderate, high) per dimension[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into three subintervals of equal amplitude (Same range width)[cite: 1].
+
+4. `REFSQ_stks_grouped_terciles.csv`  
+   * **Subgroups:** 3 intervals (low, moderate, high) per dimension[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into three subintervals using terciles (Same stakeholders number), optimizing balance and diversity[cite: 1].
 
 ## Data Format & Schema
 
-Each CSV file uses a semicolon (`;`) as a separator and follows this structure:
+Each CSV file uses a semicolon (`;`) as a separator and follows this structure[cite: 1]:
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
-| `class` | String | The assigned stakeholder salience class combination (e.g., `"low.low.low"`, `"low.low.high"`) based on the partition thresholds. |
-| `key` | Integer | Unique row tracking identifier. |
-| `id` | Integer | Anonymous stakeholder identification number. |
-| `urg` | Numeric | Normalized score/metric for the **Urgency** attribute. |
-| `leg` | Numeric | Normalized score/metric for the **Legitimacy** attribute. |
-| `pow` | Numeric | Normalized score/metric for the **Power** attribute. |
+| `class` | String | The assigned stakeholder salience subgroup combination (e.g., `"low.low.low"`, `"low.mod.high"`) based on interval mappings[cite: 1]. |
+| `key` | Integer | Unique tracking row identifier[cite: 1]. |
+| `id` | Integer | Anonymous stakeholder identification number from the recommendation network (RALIC project)[cite: 1]. |
+| `urg` | Numeric | Quantitative metric representing the **Urgency** attribute (number of requirements voted)[cite: 1]. |
+| `leg` | Numeric | Quantitative metric representing the **Legitimacy** attribute (total recommendations received)[cite: 1]. |
+| `pow` | Numeric | Quantitative metric representing the **Power** attribute (status or role significance)[cite: 1]. |
 
 ### Data Example
 ```csv
 "class";"key";"id";"urg";"leg";"pow"
-"low.low.low";1;1;8;31;24.75
-"low.low.high";52;52;19;110;49.325
+"low.low.low";4;4;0;1;0.0
+"high.high.high";31;31;25;142;88.5
 ```
 
 ### Citation
@@ -52,5 +60,5 @@ If you use this replication package or find the methodology useful in your resea
 }
 ```
 
-License
-This dataset is made available for academic and replication purposes.
+License: 
+  - This dataset is made available for academic and replication purposes.
