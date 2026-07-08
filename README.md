@@ -12,19 +12,19 @@ To evaluate effectiveness in maintaining equality and diversity, the arrangement
 
 The repository includes the four primary `.csv` files corresponding exactly to the partition methods and dimension intervals evaluated in the case study:
 
-1. `REFSQ_stks_grouped_mid_points.csv`  
+1. `stks_grouped_mid_points.csv`  
    * **Subgroups:** 2 intervals (low, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into two halves of equal amplitude (Same range width).
 
-2. `REFSQ_stks_grouped_q2s.csv`  
+2. `stks_grouped_q2s.csv`  
    * **Subgroups:** 2 intervals (low, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into two subintervals using the median (Same stakeholders number), balancing the distribution.
 
-3. `REFSQ_stks_grouped_three_subintervals.csv`  
+3. `stks_grouped_three_subintervals.csv`  
    * **Subgroups:** 3 intervals (low, moderate, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into three subintervals of equal amplitude (Same range width).
 
-4. `REFSQ_stks_grouped_terciles.csv`  
+4. `stks_grouped_terciles.csv`  
    * **Subgroups:** 3 intervals (low, moderate, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into three subintervals using terciles (Same stakeholders number), optimizing balance and diversity.
 
