@@ -2,7 +2,6 @@
 
 This repository contains the replication datasets for the paper **"Operationalization of equity through quantitative analysis of stakeholder salience"** by Isabel M. del Águila and José del Sagrado (Department of Informatics, University of Almería).
 
-## Overview
 
 ## Overview
 
