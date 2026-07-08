@@ -22,10 +22,10 @@ The repository includes the four primary `.csv` files corresponding exactly to t
 
 3. `REFSQ_stks_grouped_three_subintervals.csv`  
    * **Subgroups:** 3 intervals (low, moderate, high) per dimension.
-   * **Partition Criteria:** Divides the range of each dimension into three subintervals of equal amplitude (Same range width)[cite: 1].
+   * **Partition Criteria:** Divides the range of each dimension into three subintervals of equal amplitude (Same range width).
 
 4. `REFSQ_stks_grouped_terciles.csv`  
-   * **Subgroups:** 3 intervals (low, moderate, high) per dimension[cite: 1].
+   * **Subgroups:** 3 intervals (low, moderate, high) per dimension.
    * **Partition Criteria:** Divides the range of each dimension into three subintervals using terciles (Same stakeholders number), optimizing balance and diversity.
 
 ## Data Format & Schema
@@ -34,12 +34,12 @@ Each CSV file uses a semicolon (`;`) as a separator and follows this structure:
 
 | Column | Type | Description |
 | :--- | :--- | :--- |
-| `class` | String | The assigned stakeholder salience subgroup combination (e.g., `"low.low.low"`, `"low.mod.high"`) based on interval mappings[cite: 1]. |
-| `key` | Integer | Unique tracking row identifier[cite: 1]. |
-| `id` | Integer | Anonymous stakeholder identification number from the recommendation network (RALIC project)[cite: 1]. |
-| `urg` | Numeric | Quantitative metric representing the **Urgency** attribute (number of requirements voted)[cite: 1]. |
-| `leg` | Numeric | Quantitative metric representing the **Legitimacy** attribute (total recommendations received)[cite: 1]. |
-| `pow` | Numeric | Quantitative metric representing the **Power** attribute (status or role significance)[cite: 1]. |
+| `class` | String | The assigned stakeholder salience subgroup combination (e.g., `"low.low.low"`, `"low.mod.high"`) based on interval mappings. |
+| `key` | Integer | Unique tracking row identifier. |
+| `id` | Integer | Anonymous stakeholder identification number from the recommendation network (RALIC project). |
+| `urg` | Numeric | Quantitative metric representing the **Urgency** attribute (number of requirements voted). |
+| `leg` | Numeric | Quantitative metric representing the **Legitimacy** attribute (total recommendations received). |
+| `pow` | Numeric | Quantitative metric representing the **Power** attribute (status or role significance). |
 
 ### Data Example
 ```csv
